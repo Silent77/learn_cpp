@@ -3,14 +3,17 @@
     <type>org.netbeans.modules.cnd.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>Welcome_1</name>
+            <name>LearningCPP_Prata</name>
             <make-project-type>0</make-project-type>
             <c-extensions/>
-            <cpp-extensions>cc,cpp</cpp-extensions>
+            <cpp-extensions>cpp</cpp-extensions>
             <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>chapter8</sourceRootElem>
+                <sourceRootElem>chapter7</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>Debug</name>

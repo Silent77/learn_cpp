@@ -35,12 +35,20 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/exercise_3_4.o \
-	${OBJECTDIR}/exercise_6.o \
-	${OBJECTDIR}/exercise_7_2.o \
-	${OBJECTDIR}/exercise_7_3.o \
-	${OBJECTDIR}/exercise_7_5.o \
-	${OBJECTDIR}/welcome.o
+	${OBJECTDIR}/chapter7/exercise_7_2.o \
+	${OBJECTDIR}/chapter7/exercise_7_3.o \
+	${OBJECTDIR}/chapter7/exercise_7_4.o \
+	${OBJECTDIR}/chapter7/exercise_7_5.o \
+	${OBJECTDIR}/chapter7/exercise_7_6.o \
+	${OBJECTDIR}/chapter7/exercise_7_7.o \
+	${OBJECTDIR}/chapter7/exercise_7_8.o \
+	${OBJECTDIR}/chapter7/exercise_7_9.o \
+	${OBJECTDIR}/chapter8/exercise_8_1.o \
+	${OBJECTDIR}/chapter8/exercise_8_2.o \
+	${OBJECTDIR}/chapter8/exercise_8_3.o \
+	${OBJECTDIR}/chapter8/exercise_8_4.o \
+	${OBJECTDIR}/chapter8/exercise_8_5.o \
+	${OBJECTDIR}/chapter8/exercise_8_6.o
 
 
 # C Compiler Flags
@@ -67,35 +75,75 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/welcome_1.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/welcome_1 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/exercise_3_4.o: exercise_3_4.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/chapter7/exercise_7_2.o: chapter7/exercise_7_2.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/exercise_3_4.o exercise_3_4.cc
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter7/exercise_7_2.o chapter7/exercise_7_2.cpp
 
-${OBJECTDIR}/exercise_6.o: exercise_6.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/chapter7/exercise_7_3.o: chapter7/exercise_7_3.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/exercise_6.o exercise_6.cc
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter7/exercise_7_3.o chapter7/exercise_7_3.cpp
 
-${OBJECTDIR}/exercise_7_2.o: exercise_7_2.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/chapter7/exercise_7_4.o: chapter7/exercise_7_4.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/exercise_7_2.o exercise_7_2.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter7/exercise_7_4.o chapter7/exercise_7_4.cpp
 
-${OBJECTDIR}/exercise_7_3.o: exercise_7_3.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/chapter7/exercise_7_5.o: chapter7/exercise_7_5.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/exercise_7_3.o exercise_7_3.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter7/exercise_7_5.o chapter7/exercise_7_5.cpp
 
-${OBJECTDIR}/exercise_7_5.o: exercise_7_5.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/chapter7/exercise_7_6.o: chapter7/exercise_7_6.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/exercise_7_5.o exercise_7_5.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter7/exercise_7_6.o chapter7/exercise_7_6.cpp
 
-${OBJECTDIR}/welcome.o: welcome.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/chapter7/exercise_7_7.o: chapter7/exercise_7_7.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/welcome.o welcome.cc
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter7/exercise_7_7.o chapter7/exercise_7_7.cpp
+
+${OBJECTDIR}/chapter7/exercise_7_8.o: chapter7/exercise_7_8.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter7
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter7/exercise_7_8.o chapter7/exercise_7_8.cpp
+
+${OBJECTDIR}/chapter7/exercise_7_9.o: chapter7/exercise_7_9.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter7
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter7/exercise_7_9.o chapter7/exercise_7_9.cpp
+
+${OBJECTDIR}/chapter8/exercise_8_1.o: chapter8/exercise_8_1.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter8
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter8/exercise_8_1.o chapter8/exercise_8_1.cpp
+
+${OBJECTDIR}/chapter8/exercise_8_2.o: chapter8/exercise_8_2.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter8
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter8/exercise_8_2.o chapter8/exercise_8_2.cpp
+
+${OBJECTDIR}/chapter8/exercise_8_3.o: chapter8/exercise_8_3.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter8
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter8/exercise_8_3.o chapter8/exercise_8_3.cpp
+
+${OBJECTDIR}/chapter8/exercise_8_4.o: chapter8/exercise_8_4.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter8
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter8/exercise_8_4.o chapter8/exercise_8_4.cpp
+
+${OBJECTDIR}/chapter8/exercise_8_5.o: chapter8/exercise_8_5.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter8
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter8/exercise_8_5.o chapter8/exercise_8_5.cpp
+
+${OBJECTDIR}/chapter8/exercise_8_6.o: chapter8/exercise_8_6.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter8
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter8/exercise_8_6.o chapter8/exercise_8_6.cpp
 
 # Subprojects
 .build-subprojects:

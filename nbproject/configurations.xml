@@ -13,12 +13,24 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>exercise_3_4.cc</itemPath>
-      <itemPath>exercise_6.cc</itemPath>
-      <itemPath>exercise_7_2.cpp</itemPath>
-      <itemPath>exercise_7_3.cpp</itemPath>
-      <itemPath>exercise_7_5.cpp</itemPath>
-      <itemPath>welcome.cc</itemPath>
+      <logicalFolder name="chapter7" displayName="chapter7" projectFiles="true">
+        <itemPath>chapter7/exercise_7_2.cpp</itemPath>
+        <itemPath>chapter7/exercise_7_3.cpp</itemPath>
+        <itemPath>chapter7/exercise_7_4.cpp</itemPath>
+        <itemPath>chapter7/exercise_7_5.cpp</itemPath>
+        <itemPath>chapter7/exercise_7_6.cpp</itemPath>
+        <itemPath>chapter7/exercise_7_7.cpp</itemPath>
+        <itemPath>chapter7/exercise_7_8.cpp</itemPath>
+        <itemPath>chapter7/exercise_7_9.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="chapter8" displayName="chapter8" projectFiles="true">
+        <itemPath>chapter8/exercise_8_1.cpp</itemPath>
+        <itemPath>chapter8/exercise_8_2.cpp</itemPath>
+        <itemPath>chapter8/exercise_8_3.cpp</itemPath>
+        <itemPath>chapter8/exercise_8_4.cpp</itemPath>
+        <itemPath>chapter8/exercise_8_5.cpp</itemPath>
+        <itemPath>chapter8/exercise_8_6.cpp</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -26,6 +38,10 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>chapter8</Elem>
+    <Elem>chapter7</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -36,6 +52,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="chapter8/exercise_8_6.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="welcome.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
@@ -59,17 +77,33 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="exercise_3_4.cc" ex="false" tool="1" flavor2="0">
+      <item path="chapter7/exercise_7_2.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="exercise_6.cc" ex="false" tool="1" flavor2="0">
+      <item path="chapter7/exercise_7_3.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="exercise_7_2.cpp" ex="false" tool="1" flavor2="0">
+      <item path="chapter7/exercise_7_4.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="exercise_7_3.cpp" ex="false" tool="1" flavor2="0">
+      <item path="chapter7/exercise_7_5.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="exercise_7_5.cpp" ex="false" tool="1" flavor2="0">
+      <item path="chapter7/exercise_7_6.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="welcome.cc" ex="false" tool="1" flavor2="0">
+      <item path="chapter7/exercise_7_7.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter7/exercise_7_8.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter7/exercise_7_9.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter8/exercise_8_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter8/exercise_8_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter8/exercise_8_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter8/exercise_8_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter8/exercise_8_5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter8/exercise_8_6.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="welcome.h" ex="false" tool="3" flavor2="0">
       </item>
