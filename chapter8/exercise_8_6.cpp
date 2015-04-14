@@ -10,12 +10,13 @@
 
 using namespace std;
 
-template <class T> T maxn(const T ar[],const int n);
-template <> char maxn<char*>(const char* ar[],const int n);
+template <class T> T maxn(const T* ar,const int n);
+template <> char maxn<char>(const char** ar,const int n);
 /*
  * 
  */
-int main(int argc, char** argv) {
+int main(int argc, char** argv) 
+{
     int ar1[]={5,4,6,7,8};
     double ar2[]={500,-4,6e2};
     cout<<"Max 5:"<<maxn(ar1,5)<<endl;
@@ -24,7 +25,7 @@ int main(int argc, char** argv) {
 //    char* str[5]={"My","Head","Is","very","big"};
 //    char* s=maxn(str,5);
 //    cout<<"The max string is:"<<s<<" at address "<<&s;
-    char ar3[3]="hi";
+    char* ar3[3]={"Hi!","Hello!","Bye!"};
     cout<<"Max char:"<<maxn(ar3,2)<<endl;
     return 0;
 }
@@ -37,7 +38,7 @@ template <class T> T maxn(const T* t,const int n)
     return max;
 }
 
-template <> char maxn<char*>(const char* ch[],const int n)
+template <> char maxn<char>(const char** ch,const int n)
 {
     /*int max_l=0;
     int max_i=0;
@@ -53,5 +54,5 @@ template <> char maxn<char*>(const char* ch[],const int n)
     }
     return ar[max_i];
      */
-    return ch[0];
+    return ch[0][0];
 }
