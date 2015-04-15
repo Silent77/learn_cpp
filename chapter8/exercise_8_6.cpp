@@ -7,14 +7,37 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
 template <class T> T maxn(const T* ar,const int n);
-template <> char maxn<char>(const char** ar,const int n);
-/*
- * 
- */
+template <> char* maxn<char*>(char* const* ar,const int n);
+
+template <class T> T maxn(const T* t,const int n)
+{
+    T max=t[0];
+    for (int i=1;i<n;i++)
+        if (max<t[i]) max=t[i];
+    return max;
+}
+
+template <> char* maxn<char*>(char* const* ar,const int n)
+{
+    int max_l=0;
+    int max_i=0;
+    int l;
+    for (int i=0;i<n;i++)
+    {
+        l=strlen(ar[i]);
+        if (l>max_l) 
+        {
+            max_l=l;
+            max_i=i;
+        }
+    }
+    return ar[max_i];
+}
 int main(int argc, char** argv) 
 {
     int ar1[]={5,4,6,7,8};
@@ -25,34 +48,7 @@ int main(int argc, char** argv)
 //    char* str[5]={"My","Head","Is","very","big"};
 //    char* s=maxn(str,5);
 //    cout<<"The max string is:"<<s<<" at address "<<&s;
-    char* ar3[3]={"Hi!","Hello!","Bye!"};
-    cout<<"Max char:"<<maxn(ar3,2)<<endl;
+    char* ar3[4]={"Hifgfgffg!","Hello my dear!","Bye my darling forever!","hgh"};
+    cout<<"Max char:"<<maxn(ar3,4)<<endl;
     return 0;
-}
-
-template <class T> T maxn(const T* t,const int n)
-{
-    T max=t[0];
-    for (int i=1;i<n;i++)
-        if (max<t[i]) max=t[i];
-    return max;
-}
-
-template <> char maxn<char>(const char** ch,const int n)
-{
-    /*int max_l=0;
-    int max_i=0;
-    int l;
-    for (int i=1;i<n;i++)
-    {
-        l=strlen(ar[i]);
-        if (l>max_l) 
-        {
-            max_l=l;
-            max_i=i;
-        }
-    }
-    return ar[max_i];
-     */
-    return ch[0][0];
 }
