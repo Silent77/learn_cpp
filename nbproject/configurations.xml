@@ -13,6 +13,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="f2" displayName="chapter10" projectFiles="true">
+        <itemPath>chapter10/account.cpp</itemPath>
+        <itemPath>chapter10/account.h</itemPath>
+        <itemPath>chapter10/useacc1.cpp</itemPath>
+      </logicalFolder>
       <logicalFolder name="chapter7" displayName="chapter7" projectFiles="true">
         <itemPath>chapter7/exercise_7_2.cpp</itemPath>
         <itemPath>chapter7/exercise_7_3.cpp</itemPath>
@@ -47,6 +52,7 @@
   <sourceRootList>
     <Elem>chapter8</Elem>
     <Elem>chapter7</Elem>
+    <Elem>chapter10</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -58,7 +64,11 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="chapter8/exercise_9_1.cpp" ex="false" tool="1" flavor2="0">
+      <item path="chapter10/account.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter10/account.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chapter10/useacc1.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="chapter8/golf.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -87,6 +97,12 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="chapter10/account.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter10/account.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chapter10/useacc1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="chapter7/exercise_7_2.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="chapter7/exercise_7_3.cpp" ex="false" tool="1" flavor2="0">

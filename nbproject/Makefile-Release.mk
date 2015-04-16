@@ -35,6 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/chapter10/account.o \
+	${OBJECTDIR}/chapter10/useacc1.o \
 	${OBJECTDIR}/chapter7/exercise_7_2.o \
 	${OBJECTDIR}/chapter7/exercise_7_3.o \
 	${OBJECTDIR}/chapter7/exercise_7_4.o \
@@ -77,6 +79,16 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/welcome_1.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/welcome_1 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/chapter10/account.o: chapter10/account.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter10
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter10/account.o chapter10/account.cpp
+
+${OBJECTDIR}/chapter10/useacc1.o: chapter10/useacc1.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter10
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter10/useacc1.o chapter10/useacc1.cpp
 
 ${OBJECTDIR}/chapter7/exercise_7_2.o: chapter7/exercise_7_2.cpp 
 	${MKDIR} -p ${OBJECTDIR}/chapter7

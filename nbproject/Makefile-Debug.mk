@@ -35,7 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/chapter8/exercise_9_1.o \
+	${OBJECTDIR}/chapter10/account.o \
+	${OBJECTDIR}/chapter10/useacc1.o \
 	${OBJECTDIR}/chapter8/golf.o
 
 
@@ -63,10 +64,15 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/welcome_1.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/welcome_1 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/chapter8/exercise_9_1.o: chapter8/exercise_9_1.cpp 
-	${MKDIR} -p ${OBJECTDIR}/chapter8
+${OBJECTDIR}/chapter10/account.o: chapter10/account.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter10
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter8/exercise_9_1.o chapter8/exercise_9_1.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter10/account.o chapter10/account.cpp
+
+${OBJECTDIR}/chapter10/useacc1.o: chapter10/useacc1.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter10
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter10/useacc1.o chapter10/useacc1.cpp
 
 ${OBJECTDIR}/chapter8/golf.o: chapter8/golf.cpp 
 	${MKDIR} -p ${OBJECTDIR}/chapter8
