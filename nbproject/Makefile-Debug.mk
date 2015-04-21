@@ -36,7 +36,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/chapter10/account.o \
-	${OBJECTDIR}/chapter10/useacc1.o \
+	${OBJECTDIR}/chapter12/cow.o \
+	${OBJECTDIR}/chapter12/string2.o \
+	${OBJECTDIR}/chapter12/usecow.o \
 	${OBJECTDIR}/chapter8/golf.o
 
 
@@ -69,10 +71,20 @@ ${OBJECTDIR}/chapter10/account.o: chapter10/account.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter10/account.o chapter10/account.cpp
 
-${OBJECTDIR}/chapter10/useacc1.o: chapter10/useacc1.cpp 
-	${MKDIR} -p ${OBJECTDIR}/chapter10
+${OBJECTDIR}/chapter12/cow.o: chapter12/cow.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter12
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter10/useacc1.o chapter10/useacc1.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter12/cow.o chapter12/cow.cpp
+
+${OBJECTDIR}/chapter12/string2.o: chapter12/string2.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter12
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter12/string2.o chapter12/string2.cpp
+
+${OBJECTDIR}/chapter12/usecow.o: chapter12/usecow.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter12
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter12/usecow.o chapter12/usecow.cpp
 
 ${OBJECTDIR}/chapter8/golf.o: chapter8/golf.cpp 
 	${MKDIR} -p ${OBJECTDIR}/chapter8

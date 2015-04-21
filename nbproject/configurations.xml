@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f1"
+                   displayName="chapter12"
+                   projectFiles="true"
+                   kind="ROOT">
+      <itemPath>chapter12/cow.cpp</itemPath>
+      <itemPath>chapter12/cow.h</itemPath>
+      <itemPath>chapter12/queue.h</itemPath>
+      <itemPath>chapter12/string2.cpp</itemPath>
+      <itemPath>chapter12/string2.h</itemPath>
+      <itemPath>chapter12/usecow.cpp</itemPath>
+    </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>welcome.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -49,11 +59,6 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
-  <sourceRootList>
-    <Elem>chapter8</Elem>
-    <Elem>chapter7</Elem>
-    <Elem>chapter10</Elem>
-  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -68,13 +73,21 @@
       </item>
       <item path="chapter10/account.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="chapter10/useacc1.cpp" ex="false" tool="1" flavor2="0">
+      <item path="chapter12/cow.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter12/cow.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chapter12/queue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chapter12/string2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter12/string2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chapter12/usecow.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="chapter8/golf.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="chapter8/golf.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="welcome.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -102,6 +115,18 @@
       <item path="chapter10/account.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="chapter10/useacc1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter12/cow.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter12/cow.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chapter12/queue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chapter12/string2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chapter12/string2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chapter12/usecow.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="chapter7/exercise_7_2.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -138,8 +163,6 @@
       <item path="chapter8/golf.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="chapter8/golf.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="welcome.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

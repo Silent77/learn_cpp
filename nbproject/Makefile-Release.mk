@@ -37,6 +37,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/chapter10/account.o \
 	${OBJECTDIR}/chapter10/useacc1.o \
+	${OBJECTDIR}/chapter12/cow.o \
+	${OBJECTDIR}/chapter12/string2.o \
+	${OBJECTDIR}/chapter12/usecow.o \
 	${OBJECTDIR}/chapter7/exercise_7_2.o \
 	${OBJECTDIR}/chapter7/exercise_7_3.o \
 	${OBJECTDIR}/chapter7/exercise_7_4.o \
@@ -89,6 +92,21 @@ ${OBJECTDIR}/chapter10/useacc1.o: chapter10/useacc1.cpp
 	${MKDIR} -p ${OBJECTDIR}/chapter10
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter10/useacc1.o chapter10/useacc1.cpp
+
+${OBJECTDIR}/chapter12/cow.o: chapter12/cow.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter12
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter12/cow.o chapter12/cow.cpp
+
+${OBJECTDIR}/chapter12/string2.o: chapter12/string2.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter12
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter12/string2.o chapter12/string2.cpp
+
+${OBJECTDIR}/chapter12/usecow.o: chapter12/usecow.cpp 
+	${MKDIR} -p ${OBJECTDIR}/chapter12
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/chapter12/usecow.o chapter12/usecow.cpp
 
 ${OBJECTDIR}/chapter7/exercise_7_2.o: chapter7/exercise_7_2.cpp 
 	${MKDIR} -p ${OBJECTDIR}/chapter7

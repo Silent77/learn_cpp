@@ -10,11 +10,7 @@
             <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList>
-                <sourceRootElem>chapter8</sourceRootElem>
-                <sourceRootElem>chapter7</sourceRootElem>
-                <sourceRootElem>chapter10</sourceRootElem>
-            </sourceRootList>
+            <sourceRootList/>
             <confList>
                 <confElem>
                     <name>Debug</name>
